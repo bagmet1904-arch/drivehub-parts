@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>DriveHub Parts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    background: #111827;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.btn {
+    background: #3b82f6;
+    padding: 12px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DriveHub Parts</div>
+    <div>UA | EN</div>
+</header>
+
+<div class="hero">
+    <h1>Автозапчастини для будь-якого авто</h1>
+    <p>Пошук, каталог, швидке замовлення</p>
+    <button class="btn">Перейти в каталог</button>
+</div>
+
+<div class="products">
+    <div class="card">Гальмівні колодки</div>
+    <div class="card">Фільтр масляний</div>
+    <div class="card">Амортизатор</div>
+    <div class="card">Свічки запалювання</div>
+</div>
+
+<footer>
+    © 2026 DriveHub Parts
+</footer>
+
+</body>
+</html>
