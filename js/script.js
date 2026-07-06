@@ -1,13 +1,11 @@
-let cart = [];
+function searchProduct() {
 
-function addToCart(name, price){
+    let search = document.getElementById("searchInput").value.trim().toLowerCase();
 
-    cart.push({
-        name:name,
-        price:price
-    });
+    if (search === "") {
+        alert("Введіть назву товару.");
+        return;
+    }
 
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    alert("Товар додано у кошик!");
+    window.location.href = "catalog.html?search=" + encodeURIComponent(search);
 }
