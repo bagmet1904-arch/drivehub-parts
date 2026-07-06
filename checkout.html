@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оформлення замовлення | DriveHub Parts</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+.container{
+max-width:700px;
+margin:50px auto;
+background:#1f2937;
+padding:35px;
+border-radius:15px;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+resize:vertical;
+height:100px;
+}
+
+.btn{
+width:100%;
+background:#3b82f6;
+color:white;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.btn:hover{
+background:#2563eb;
+}
+
+.info{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+margin-top:25px;
+line-height:1.7;
+}
+
+footer{
+margin-top:50px;
+background:#111827;
+text-align:center;
+padding:25px;
+}
+
+footer p{
+margin:6px;
+color:#d1d5db;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+DriveHub Parts
+</div>
+
+<nav>
+<a href="index.html">Головна</a>
+<a href="catalog.html">Каталог</a>
+<a href="cart.html">Кошик</a>
+<a href="contacts.html">Контакти</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h1>Оформлення замовлення</h1>
+
+<form action="success.html">
+
+<div class="form-group">
+<label>Ім'я</label>
+<input type="text" placeholder="Введіть ім'я" required>
+</div>
+
+<div class="form-group">
+<label>Прізвище</label>
+<input type="text" placeholder="Введіть прізвище" required>
+</div>
+
+<div class="form-group">
+<label>Телефон</label>
+<input type="tel" placeholder="+380..." required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="example@gmail.com">
+</div>
+
+<div class="form-group">
+<label>Місто</label>
+<input type="text" placeholder="Ваше місто" required>
+</div>
+
+<div class="form-group">
+<label>Відділення Нової пошти</label>
+<input type="text" placeholder="Наприклад: №5" required>
+</div>
+
+<div class="form-group">
+<label>Спосіб оплати</label>
+
+<select>
+
+<option>Оплата при отриманні</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Коментар до замовлення</label>
+
+<textarea placeholder="За бажанням"></textarea>
+
+</div>
+
+<div class="info">
+
+<b>Інформація:</b><br><br>
+
+✔ Після оформлення замовлення наш менеджер зв'яжеться з вами.<br>
+
+✔ Оплата здійснюється при отриманні товару.<br>
+
+✔ Доставка виконується по всій Україні.
+
+</div>
+
+<button class="btn">
+
+Підтвердити замовлення
+
+</button>
+
+</form>
+
+</div>
+
+<footer>
+
+<p><strong>DriveHub Parts © 2026</strong></p>
+
+<p>Інтернет-магазин автозапчастин</p>
+
+<p>Оплата при отриманні • Доставка по Україні</p>
+
+</footer>
+
+</body>
+</html>
