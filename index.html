@@ -2,69 +2,189 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>DriveHub Parts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveHub Parts</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: #111827;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #3b82f6;
+/* HEADER */
+
+header{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#3b82f6;
 }
 
-.hero h1 {
-    font-size: 40px;
+nav{
+    display:flex;
+    gap:30px;
 }
 
-.btn {
-    background: #3b82f6;
-    padding: 12px 25px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 8px;
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 40px;
+nav a:hover{
+    color:#3b82f6;
 }
 
-.card {
-    background: #1f2937;
-    padding: 15px;
-    border-radius: 10px;
+.language{
+    font-size:16px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111827;
-    margin-top: 40px;
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
 }
+
+.hero h1{
+    font-size:44px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    color:#d1d5db;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    transition:.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+/* PRODUCTS */
+
+.products{
+    padding:60px 40px;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1f2937;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+/* ADVANTAGES */
+
+.advantages{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.advantages h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.adv-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.adv-card{
+    background:#1f2937;
+    padding:30px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.adv-card:hover{
+    transform:translateY(-5px);
+}
+
+.adv-card h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.adv-card h3{
+    margin-bottom:15px;
+}
+
+.adv-card p{
+    color:#d1d5db;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:8px;
+    color:#d1d5db;
+}
+
 </style>
 
 </head>
@@ -72,25 +192,115 @@ footer {
 <body>
 
 <header>
-    <div class="logo">DriveHub Parts</div>
-    <div>UA | EN</div>
+
+<div class="logo">
+DriveHub Parts
+</div>
+
+<nav>
+<a href="index.html">Головна</a>
+<a href="catalog.html">Каталог</a>
+<a href="about.html">Про нас</a>
+<a href="contacts.html">Контакти</a>
+</nav>
+
+<div class="language">
+UA | EN
+</div>
+
 </header>
 
-<div class="hero">
-    <h1>Автозапчастини для будь-якого авто</h1>
-    <p>Пошук, каталог, швидке замовлення</p>
-    <button class="btn">Перейти в каталог</button>
+<section class="hero">
+
+<h1>Якісні автозапчастини для вашого автомобіля</h1>
+
+<p>
+DriveHub Parts — сучасний інтернет-магазин автозапчастин для легкових автомобілів.
+У нашому каталозі ви знайдете широкий вибір деталей для різних марок авто,
+зможете додати товари до кошика та швидко оформити замовлення.
+Оплата здійснюється при отриманні товару після підтвердження менеджером.
+</p>
+
+<a href="catalog.html" class="btn">
+Перейти в каталог
+</a>
+
+</section>
+
+<section class="products">
+
+<h2>Популярні категорії</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🛑 Гальмівні колодки</h3>
+<p>Надійні гальмівні колодки для безпечного керування автомобілем.</p>
+<a href="catalog.html" class="btn">Переглянути</a>
 </div>
 
-<div class="products">
-    <div class="card">Гальмівні колодки</div>
-    <div class="card">Фільтр масляний</div>
-    <div class="card">Амортизатор</div>
-    <div class="card">Свічки запалювання</div>
+<div class="card">
+<h3>🛢️ Масляні фільтри</h3>
+<p>Фільтри для ефективного захисту двигуна та його стабільної роботи.</p>
+<a href="catalog.html" class="btn">Переглянути</a>
 </div>
+
+<div class="card">
+<h3>🚗 Амортизатори</h3>
+<p>Якісні амортизатори для комфортної та безпечної їзди.</p>
+<a href="catalog.html" class="btn">Переглянути</a>
+</div>
+
+<div class="card">
+<h3>⚡ Свічки запалювання</h3>
+<p>Свічки запалювання для стабільної роботи двигуна.</p>
+<a href="catalog.html" class="btn">Переглянути</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="advantages">
+
+<h2>Чому обирають DriveHub Parts?</h2>
+
+<div class="adv-grid">
+
+<div class="adv-card">
+<h1>🚚</h1>
+<h3>Швидка доставка</h3>
+<p>Відправлення замовлень по всій території України.</p>
+</div>
+
+<div class="adv-card">
+<h1>📦</h1>
+<h3>Широкий асортимент</h3>
+<p>Великий вибір автозапчастин для різних марок і моделей автомобілів.</p>
+</div>
+
+<div class="adv-card">
+<h1>💵</h1>
+<h3>Оплата при отриманні</h3>
+<p>Замовлення оплачується після отримання або після підтвердження менеджером.</p>
+</div>
+
+<div class="adv-card">
+<h1>📞</h1>
+<h3>Підтвердження замовлення</h3>
+<p>Після оформлення замовлення менеджер зв'яжеться з вами для уточнення деталей.</p>
+</div>
+
+</div>
+
+</section>
 
 <footer>
-    © 2026 DriveHub Parts
+
+<p><strong>DriveHub Parts © 2026</strong></p>
+<p>Інтернет-магазин автозапчастин для легкових автомобілів.</p>
+<p>Оплата при отриманні • Доставка по Україні</p>
+
 </footer>
 
 </body>
