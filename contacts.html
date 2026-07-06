@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакти | DriveHub Parts</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+.container{
+max-width:1100px;
+margin:50px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+padding:20px;
+}
+
+.card{
+background:#1f2937;
+padding:30px;
+border-radius:15px;
+}
+
+h1{
+text-align:center;
+margin-top:40px;
+font-size:42px;
+}
+
+h2{
+margin-bottom:20px;
+color:#60a5fa;
+}
+
+p{
+line-height:1.8;
+margin-bottom:15px;
+color:#d1d5db;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input,
+textarea{
+width:100%;
+padding:12px;
+margin-bottom:20px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:120px;
+resize:vertical;
+}
+
+button{
+background:#3b82f6;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+footer p{
+margin:6px;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+DriveHub Parts
+</div>
+
+<nav>
+
+<a href="index.html">Головна</a>
+
+<a href="catalog.html">Каталог</a>
+
+<a href="about.html">Про нас</a>
+
+<a href="cart.html">Кошик</a>
+
+</nav>
+
+</header>
+
+<h1>Контакти</h1>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Наші контакти</h2>
+
+<p><strong>📍 Адреса:</strong><br>
+м. Київ, вул. Автомобільна, 15</p>
+
+<p><strong>📞 Телефон:</strong><br>
++380 (67) 123-45-67</p>
+
+<p><strong>📧 Email:</strong><br>
+info@drivehubparts.ua</p>
+
+<p><strong>🕒 Графік роботи:</strong><br>
+Пн–Пт: 09:00–18:00<br>
+Сб: 10:00–15:00<br>
+Нд: вихідний</p>
+
+</div>
+
+<div class="card">
+
+<h2>Зворотний зв'язок</h2>
+
+<form>
+
+<label>Ім'я</label>
+<input type="text" placeholder="Ваше ім'я">
+
+<label>Email</label>
+<input type="email" placeholder="Ваш Email">
+
+<label>Повідомлення</label>
+<textarea placeholder="Введіть повідомлення"></textarea>
+
+<button type="submit">
+Надіслати повідомлення
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+<p><strong>DriveHub Parts © 2026</strong></p>
+
+<p>Інтернет-магазин автозапчастин</p>
+
+<p>Оплата при отриманні • Доставка по Україні</p>
+
+</footer>
+
+</body>
+</html>
