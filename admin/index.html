@@ -2,11 +2,129 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>Адмін-панель</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveHub Parts | Адмін-панель</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:240px;
+    background:#1f2937;
+    min-height:100vh;
+    color:white;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 20px;
+    border-bottom:1px solid #374151;
+}
+
+.sidebar a:hover{
+    background:#3b82f6;
+}
+
+.content{
+    flex:1;
+    padding:40px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+button{
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+</style>
+
 </head>
+
 <body>
 
-<h1>Панель адміністратора</h1>
+<header>
+
+DriveHub Parts | Панель адміністратора
+
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+
+<a href="#">📊 Панель</a>
+
+<a href="#">📦 Товари</a>
+
+<a href="#">📂 Категорії</a>
+
+<a href="#">🛒 Замовлення</a>
+
+<a href="#">👥 Клієнти</a>
+
+<a href="#">⚙️ Налаштування</a>
+
+</div>
+
+<div class="content">
+
+<div class="box">
+
+<h2>Ласкаво просимо!</h2>
+
+<p>
+
+Через цю панель ви зможете керувати інтернет-магазином.
+
+</p>
+
+<br>
+
+<button>
+
++ Додати товар
+
+</button>
+
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
