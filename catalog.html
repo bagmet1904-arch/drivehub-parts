@@ -1,1 +1,296 @@
 <h1>Каталог</h1>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог | DriveHub Parts</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#3b82f6;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:#3b82f6;
+}
+
+.language{
+    font-size:16px;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d1d5db;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.search{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.search input{
+    width:350px;
+    max-width:90%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:#1f2937;
+    border-radius:12px;
+    padding:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#d1d5db;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:22px;
+    color:#60a5fa;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+DriveHub Parts
+</div>
+
+<nav>
+<a href="index.html">Головна</a>
+<a href="catalog.html">Каталог</a>
+<a href="about.html">Про нас</a>
+<a href="contacts.html">Контакти</a>
+</nav>
+
+<div class="language">
+UA | EN
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Каталог автозапчастин</h1>
+
+<p>
+Оберіть необхідні автозапчастини, додайте їх до кошика
+та оформіть замовлення за декілька хвилин.
+</p>
+
+</section>
+
+<div class="search">
+<input type="text" placeholder="Пошук товару...">
+</div>
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600" alt="">
+<h3>Гальмівні колодки Bosch</h3>
+<p>Якісні передні гальмівні колодки.</p>
+<div class="price">1450 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613214150384-1c6c7d88b1b5?w=600" alt="">
+<h3>Масляний фільтр MANN</h3>
+<p>Надійний захист двигуна.</p>
+<div class="price">420 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="">
+<h3>Амортизатор KYB</h3>
+<p>Комфортна та безпечна їзда.</p>
+<div class="price">2350 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600" alt="">
+<h3>Свічки запалювання NGK</h3>
+<p>Для стабільної роботи двигуна.</p>
+<div class="price">690 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600" alt="">
+<h3>Повітряний фільтр Bosch</h3>
+<p>Ефективне очищення повітря для двигуна.</p>
+<div class="price">390 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600" alt="">
+<h3>Акумулятор Varta 74Ah</h3>
+<p>Надійний запуск автомобіля за будь-якої погоди.</p>
+<div class="price">4650 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600" alt="">
+<h3>Комплект зчеплення Luk</h3>
+<p>Висока якість та довговічність.</p>
+<div class="price">3890 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=600" alt="">
+<h3>Радіатор охолодження</h3>
+<p>Оптимальне охолодження двигуна.</p>
+<div class="price">2750 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600" alt="">
+<h3>Гальмівний диск Brembo</h3>
+<p>Висока ефективність гальмування.</p>
+<div class="price">1680 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600" alt="">
+<h3>Паливний фільтр</h3>
+<p>Надійний захист паливної системи.</p>
+<div class="price">520 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=600" alt="">
+<h3>Комплект ременя ГРМ</h3>
+<p>Для стабільної роботи двигуна.</p>
+<div class="price">2190 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=600" alt="">
+<h3>Моторна олива 5W-30</h3>
+<p>Синтетична моторна олива преміум-класу.</p>
+<div class="price">1190 грн</div>
+<a href="cart.html" class="btn">Додати в кошик</a>
+</div>
+
+</section>
+
+<footer>
+
+<p><strong>DriveHub Parts © 2026</strong></p>
+<p>Інтернет-магазин автозапчастин для легкових автомобілів.</p>
+<p>Оплата при отриманні • Доставка по Україні</p>
+
+</footer>
+
+</body>
+</html>
